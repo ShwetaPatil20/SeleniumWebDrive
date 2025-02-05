@@ -7,7 +7,7 @@ import org.openqa.selenium.support.locators.RelativeLocator;
 
 import java.util.List;
 
-public class SeleniumDemo {
+public class SeleniumDemo {    
     public static void main(String[] args) {
         WebDriver driver = new ChromeDriver();
         driver.get("https://practicetestautomation.com/practice-test-login/");
@@ -22,7 +22,7 @@ public class SeleniumDemo {
 
         WebElement submitButton = driver.findElement(By.className("btn"));
         WebElement submitButtonXpath = driver.findElement(By.xpath("//button[@id='submit']"));
-        WebElement submitButtonCss = driver.findElement(By.cssSelector("button[id=submit]"));
+        WebElement submitButtonCss = driver.findElement(By.cssSelector("button[id='submit']"));
 
         List<WebElement> inputFields = driver.findElements(By.tagName("input"));
 
